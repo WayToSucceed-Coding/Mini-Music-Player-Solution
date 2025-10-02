@@ -2,13 +2,15 @@ from kivy.app import App
 from kivy.core.window import Window
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.image import Image
-from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
+from kivy.uix.boxlayout import BoxLayout
 from kivy.core.audio import SoundLoader
+
+Window.size = (800,600)
 
 class MiniMusicApp(App):
     def build(self):
-        Window.size = (800,600)
+
         self.title = "Mini Music Player"
         
         layout = FloatLayout()
@@ -35,4 +37,3 @@ class MiniMusicApp(App):
         return layout
         
 MiniMusicApp().run()
-
